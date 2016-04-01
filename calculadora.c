@@ -2,19 +2,20 @@
 #include <math.h>
 
 int main(void) {
-double A, B, C, DELTA, TOTAL1, TOTAL2;
+int A, B, C;
+double DELTA, TOTAL1, TOTAL2;
 printf("Digite primeiro termo: ");
-scanf("%lf", &A);
+scanf("%d", &A);
 printf("Digite segundo termo: ");
-scanf("%lf", &B);
+scanf("%d", &B);
 printf("Digite terceiro termo: ");
-scanf("%lf", &C);
+scanf("%d", &C);
 DELTA = pow(B ,2) - 4*A*C;
 TOTAL1 = (-B + sqrt(DELTA)) / 2*A;
 TOTAL2 = (-B - sqrt(DELTA)) / 2*A;
 if(DELTA > 0) {
-printf("Resultado 1 = %lf\n", TOTAL1);
-printf("            = %lf\n", TOTAL2);
+printf("X1 = %.2f\n", TOTAL1);
+printf("X2 = %.2f\n", TOTAL2);
 } else {
 	printf("Erro, Delta menor que 0\n");
 return 0;

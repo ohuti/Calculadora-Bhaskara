@@ -6,9 +6,6 @@ int A, B, C;
 double DELTA, TOTAL1, TOTAL2;
 printf("Digite primeiro termo: ");
 scanf("%d", &A);
-if(A == 0){
-	A=1;
-}
 printf("Digite segundo termo: ");
 scanf("%d", &B);
 printf("Digite terceiro termo: ");
